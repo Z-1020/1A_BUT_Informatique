@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.unicaen.iut.tp5.ControllerDemineur">
+   <top>
+      <VBox fx:id="vBox" alignment="TOP_CENTER" prefHeight="87.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar fx:id="menuBar">
+              <menus>
+                  <Menu fx:id="menuJeu" mnemonicParsing="false" text="Jeu">
+                    <items>
+                      <MenuItem fx:id="menuQuitter" mnemonicParsing="false" text="Quitter" />
+                    </items>
+                  </Menu>
+                  <Menu fx:id="menuChoixDifficulte" mnemonicParsing="false" text="Difficulté">
+                     <items>
+                        <RadioMenuItem mnemonicParsing="false" text="Facile" userData="10;10;10">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="groupe" />
+                           </toggleGroup>
+                        </RadioMenuItem>
+                        <RadioMenuItem mnemonicParsing="false" text="Moyen" toggleGroup="$groupe" userData="20;20;50" />
+                        <RadioMenuItem mnemonicParsing="false" text="Difficile" toggleGroup="$groupe" userData="30;20;100"/>
+                     </items></Menu>
+              </menus>
+            </MenuBar>
+            <HBox fx:id="hBox" prefHeight="52.0" prefWidth="600.0">
+               <children>
+                  <Label fx:id="labelInconnues" alignment="TOP_CENTER" contentDisplay="CENTER" text="Nombre d'inconnues" />
+                  <TextField fx:id="textFieldInconnu" alignment="TOP_CENTER" editable="false" focusTraversable="false" />
+                  <Label fx:id="labelMarque" alignment="TOP_CENTER" contentDisplay="CENTER" text="Nombre de marques" />
+                  <TextField fx:id="textFielMarque" alignment="TOP_CENTER" editable="false" focusTraversable="false" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <GridPane fx:id="gridPane" alignment="CENTER" gridLinesVisible="true" BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+   </center>
+</BorderPane>

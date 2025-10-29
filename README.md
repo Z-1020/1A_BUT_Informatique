@@ -1,2 +1,4 @@
 # 1A_BUT_Informatique
-Voici mes cours de première année de BUT Informatique.
+Voici les exercices de SQL et de PLSQL.  
+SQL (sigle pour Structured Query Language, « langage de requêtes structurées ») est un langage informatique normalisé servant à exploiter des bases de données relationnelles. La partie langage de manipulation des données de SQL permet de rechercher, d'ajouter, de modifier ou de supprimer des données dans les bases de données relationnelles.  
+PL/SQL (sigle de Procedural Language / Structured Query Language) est un langage fondé sur les paradigmes de programmation procédurale et structurée. Il est propriétaire, créé par Oracle et utilisé dans le cadre de bases de données relationnelles. Sa syntaxe générale ressemble à celle des langages Pascal et Ada.

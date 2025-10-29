@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+
+<MenuBar fx:id="menuBar" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/21.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iut.gon.Gribouille.controleurs.MenusControleur">
+         <menus>
+            <Menu fx:id="dessin" mnemonicParsing="false" text="Dessin">
+               <items>
+                  <MenuItem fx:id="charger" mnemonicParsing="false" text="Charger" />
+                  <MenuItem fx:id="sauvegarder" mnemonicParsing="false" text="Sauvegarder" />
+                  <MenuItem fx:id="exporter" mnemonicParsing="false" text="Exporter" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="quitter" mnemonicParsing="false" text="Quitter" />
+               </items>
+            </Menu>
+            <Menu fx:id="outils" mnemonicParsing="false" text="Outils">
+               <items>
+                  <Menu fx:id="epaisseur" mnemonicParsing="false" text="Epaisseur">
+                     <items>
+                        <RadioMenuItem fx:id="ep1" mnemonicParsing="false" text="1">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="radiogroup1" />
+                           </toggleGroup>
+                        </RadioMenuItem>
+                        <RadioMenuItem fx:id="ep2" mnemonicParsing="false" text="2" toggleGroup="$radiogroup1" />
+                        <RadioMenuItem fx:id="ep3" mnemonicParsing="false" text="3" toggleGroup="$radiogroup1" />
+                        <RadioMenuItem fx:id="ep4" mnemonicParsing="false" text="4" toggleGroup="$radiogroup1" />
+                        <RadioMenuItem fx:id="ep5" mnemonicParsing="false" text="5" toggleGroup="$radiogroup1" />
+                        <RadioMenuItem fx:id="ep6" mnemonicParsing="false" text="6" toggleGroup="$radiogroup1" />
+                        <RadioMenuItem fx:id="ep7" mnemonicParsing="false" text="7" toggleGroup="$radiogroup1" />
+                        <RadioMenuItem fx:id="ep8" mnemonicParsing="false" text="8" toggleGroup="$radiogroup1" />
+                        <RadioMenuItem fx:id="ep9" mnemonicParsing="false" text="9" toggleGroup="$radiogroup1" />
+                     </items>
+                  </Menu>
+                  <RadioMenuItem fx:id="crayon" mnemonicParsing="false" text="Crayon">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="menuGroup" />
+                     </toggleGroup>
+                  </RadioMenuItem>
+                  <RadioMenuItem fx:id="etoile" mnemonicParsing="false" text="Etoile" toggleGroup="$menuGroup" />
+               </items>
+            </Menu>
+            <Menu fx:id="aide" mnemonicParsing="false" text="Aide">
+               <items>
+                  <MenuItem fx:id="aPropos" mnemonicParsing="false" text="à propos" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>

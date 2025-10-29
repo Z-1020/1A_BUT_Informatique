@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+
+  <VBox fx:id="couleur" prefHeight="50.0" prefWidth="135.0" style="-fx-background-color: #AAAAAA;" BorderPane.alignment="CENTER" fx:controller="iut.gon.Gribouille.controleurs.CouleursControleur" xmlns="http://javafx.com/javafx/21.0.2" xmlns:fx="http://javafx.com/fxml/1">
+         <children>
+            <ColorPicker fx:id="colorPicker" prefHeight="23.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </ColorPicker>
+            <TilePane fx:id="tilePane" hgap="5.0" prefHeight="150.0" prefWidth="145.0" vgap="5.0">
+               <children>
+                  <Rectangle fx:id="rectangle1" arcHeight="1.0" arcWidth="1.0" fill="#ff281f" height="60.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="60.0" />
+                  <Rectangle fx:id="rectangle2" arcHeight="5.0" arcWidth="5.0" fill="#1fff35" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0" />
+                  <Rectangle fx:id="rectangle3" arcHeight="5.0" arcWidth="5.0" fill="#391fff" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0" />
+                  <Rectangle fx:id="rectangle4" arcHeight="5.0" arcWidth="5.0" fill="#1ffdff" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0" />
+                  <Rectangle fx:id="rectangle5" arcHeight="5.0" arcWidth="5.0" fill="#ff1ff0" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0" />
+                  <Rectangle fx:id="rectangle6" arcHeight="5.0" arcWidth="5.0" fill="#fcf700" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0" />
+                  <Rectangle fx:id="rectangle7" arcHeight="5.0" arcWidth="5.0" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0" />
+                  <Rectangle fx:id="rectangle8" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </TilePane>
+         </children>
+      </VBox>

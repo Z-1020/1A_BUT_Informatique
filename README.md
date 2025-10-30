@@ -1,2 +1,3 @@
 # 1A_BUT_Informatique
-Voici mes cours de première année de BUT Informatique.
+Voici les exercices de programmation en C.  
+le langage C est un langage de programmation impératif, généraliste et de bas niveau. Inventé au début des années 1970 pour réécrire Unix, le langage C est encore largement utilisé. De nombreux langages plus modernes comme C++, C#, Java et PHP ou JavaScript ont repris une syntaxe similaire au C et reprennent en partie sa logique. C offre au développeur une marge de contrôle importante sur la machine (notamment sur la gestion de la mémoire) et est de ce fait utilisé pour réaliser les « fondations » (compilateurs, interpréteurs, …) de ces langages plus modernes.

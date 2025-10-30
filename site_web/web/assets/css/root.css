@@ -1,0 +1,36 @@
+:root {
+
+    --rapidc3-main-color: #ff8904;
+
+    /* ajouter les styles commun ici */
+    --primary-text-color: rgba(0, 0, 0, 1);
+    --roundness: 12px;
+    
+    /* style glassmorphique */
+    --glasmorphism-bg: rgba(255, 255, 255, 0.8);
+    --glasmorphism-border-color: rgba(0, 0, 0, 0.2);
+    --glasmorphism-backdrop-filter: blur(10px);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+#content {
+    padding: 0px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background: black;
+    transition: opacity 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    footer {
+        display: none;
+    }
+}

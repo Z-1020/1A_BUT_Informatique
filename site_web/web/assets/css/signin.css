@@ -1,0 +1,27 @@
+#box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+}
+
+#div-signin {
+    border: 1px solid var(--glasmorphism-border-color);
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vh;
+}
+
+#div-signin input {
+    border: 1px solid var(--glasmorphism-border-color);
+}
+
+#div-signin button {
+    background-color: var(--rapidc3-main-color) !important;
+}
+
+#div-signin a {
+    color: var(--rapidc3-main-color) !important;
+}

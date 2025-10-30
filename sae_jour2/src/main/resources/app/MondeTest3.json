@@ -1,0 +1,19 @@
+{
+"world": "Sylvarant",
+"places" : [
+{
+    "id": 1,
+    "name": "Altaria",
+    "description": "",
+    "start": false,
+    "end": false,
+    "defeat": false,
+    "monster": null
+ }],
+ "paths": [
+ {
+ "firstPlace": 1,
+ "secondPlace": 2,
+ "distance": 5
+ }]
+}
